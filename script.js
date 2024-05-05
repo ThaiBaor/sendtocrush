@@ -2,8 +2,11 @@ let slideIndex = 0;
 const slides = document.querySelectorAll(".slides");
 let intervalID = undefined;
 const showSlides = () => {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
+  console.log(slideIndex);
+  if (slideIndex == slides.length) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
   }
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1 };
