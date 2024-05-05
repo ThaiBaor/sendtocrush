@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(253, 202, 217);
+}
+
+.protest-riot-regular {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.slideshow-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.slides {
+  border-radius: 5%;
+  border: 1px solid black;
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+.slides.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slides.active:hover {
+  box-shadow: 20px 20px 50px 10px grey;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  /* Text fully visible */
+  50% {
+    opacity: 0;
+  }
+
+  /* Text invisible */
+  100% {
+    opacity: 1;
+  }
+
+  /* Text fully visible again */
+}
+
+.blinking {
+  animation: blink 2s infinite;
+  /* Apply the blink animation infinitely */
+}
+
+.interact-container {
+  justify-content: center;
+}
+
+.center-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
