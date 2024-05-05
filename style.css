@@ -15,11 +15,10 @@ h1 {
 
 .slideshow-container {
   margin-top: 50px;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .slides {
+  margin: 5px auto;
   border-radius: 5%;
   border: 1px solid black;
   width: 200px;
